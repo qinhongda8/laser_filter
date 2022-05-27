@@ -80,6 +80,10 @@ class Process_LR_front{
         double left_ave_01[20] = {0};                        // 用于记录上一帧和当前帧的距离均值
         double right_ave_01[20] = {0};                       // 用于记录上一帧和当前帧的距离均值
         int window_value = 20;
+        
+        double left_ave_02[50] = {0};                        // 用于记录上一帧和当前帧的距离均值
+        double right_ave_02[50] = {0};                       // 用于记录上一帧和当前帧的距离均值
+        int window_value_large = 50;
 
         int cave_l  = 0;                                    // 表示车辆左侧是否驶过匝道口; (0：未在匝道口; 1：在匝道口)
         int cave_r  = 0;                                    // 表示车辆右侧是否驶过匝道口; (0：未在匝道口; 1：在匝道口)
